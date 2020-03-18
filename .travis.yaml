@@ -1,10 +1,11 @@
-language: minimal
-
+language: node_js
+node_js:
+  - "12"
+sudo: required
 services:
   - docker
-
-before_install:
-  - echo 'hello udacity'
-
+before_script:
+  - npm install
 script:
-  - echo 'hello udacity'
+  - npm test
+  
