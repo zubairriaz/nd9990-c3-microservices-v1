@@ -1,0 +1,10 @@
+language: minimal
+
+services:
+  - docker
+
+before_install:
+  - echo 'hello udacity'
+
+script:
+  - echo 'hello udacity'
